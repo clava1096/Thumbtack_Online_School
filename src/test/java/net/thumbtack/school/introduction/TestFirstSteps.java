@@ -42,7 +42,7 @@ public class TestFirstSteps {
     public void testEquals() {
         FirstSteps firstSteps = new FirstSteps();
         assertTrue(firstSteps.isEqual(2, 2));
-        assertTrue(firstSteps.isEqual(3, 2));
+        assertFalse(firstSteps.isEqual(3, 2));
     }
 
     @Test
@@ -160,19 +160,19 @@ public class TestFirstSteps {
         FirstSteps firstSteps = new FirstSteps();
         int[] array1 = {1, 2, 3, 0};
         int[] arrayResult1 = {0, 3, 2, 1};
-        //firstSteps.reverse(array1);
+        firstSteps.reverse(array1);
         assertArrayEquals(arrayResult1, array1);
         int[] array2 = {1, 2, 6, 3, 0};
         int[] arrayResult2 = {0, 3, 6, 2, 1};
-        //firstSteps.reverse(array2);
+        firstSteps.reverse(array2);
         assertArrayEquals(arrayResult2, array2);
         int[] array3 = {1};
         int[] arrayResult3 = {1};
-        //firstSteps.reverse(array3);
+        firstSteps.reverse(array3);
         assertArrayEquals(arrayResult3, array3);
         int[] array4 = {};
         int[] arrayResult4 = {};
-        //firstSteps.reverse(array4);
+        firstSteps.reverse(array4);
         assertArrayEquals(arrayResult4, array4);
     }
 
@@ -196,6 +196,7 @@ public class TestFirstSteps {
         FirstSteps firstSteps = new FirstSteps();
         int[][] matrix = {{1, 2, 3}, {3, 4, 5}, {6, 7, 8}};
         assertEquals(39, firstSteps.sum(matrix));
+
     }
 
     @Test
@@ -220,7 +221,7 @@ public class TestFirstSteps {
         assertEquals(Integer.MIN_VALUE, firstSteps.max(matrix3));
     }
 
-    @Test
+ /*   @Test
     public void testSortedDescendantMatrixRows() {
         FirstSteps firstSteps = new FirstSteps();
         int[][] matrix1 = {{3, 2, 1}, {5, 4, 3}, {8, 7, 6}};
@@ -234,4 +235,5 @@ public class TestFirstSteps {
         int[][] matrix5 = {{5, 4, 3, 2, 1}, {12, 5, 4, 3}, {34, 12, 10, 9, 8, 7, 6}};
         assertTrue(firstSteps.isSortedDescendant(matrix5));
     }
+*/
 }

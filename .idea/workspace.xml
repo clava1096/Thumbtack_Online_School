@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="" />
+    <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/introduction/TestFirstSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/introduction/TestFirstSteps.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -9,13 +14,22 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/lessons$TestFirstSteps_testSortedDescendantMatrixRows.ic" NAME="TestFirstSteps.testSortedDescendantMatrixRows Coverage Results" MODIFIED="1548521057514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.introduction.*</FILTER>
+    </SUITE>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+            <state relative-caret-position="290">
+              <caret line="239" column="13" selection-start-line="239" selection-start-column="13" selection-end-line="239" selection-end-column="13" />
+              <folding>
+                <element signature="e#131#132#0" expanded="true" />
+                <element signature="e#159#160#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -23,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/introduction/TestFirstSteps.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2720">
-              <caret line="160" column="36" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="36" />
+            <state relative-caret-position="265">
+              <caret line="229" selection-start-line="229" selection-end-line="229" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -50,8 +64,26 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="width" value="826" />
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lessons" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lessons" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="475" />
+    <option name="y" value="-22" />
+    <option name="width" value="598" />
     <option name="height" value="984" />
   </component>
   <component name="ProjectView">
@@ -59,39 +91,23 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
+              <item name="thumbtack_online_school_2018_2_slava_obvintsev" type="b2602c69:ProjectViewProjectNode" />
               <item name="thumbtack_online_school_2018_2_slava_obvintsev" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thumbtack_online_school_2018_2_slava_obvintsev" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thumbtack_online_school_2018_2_slava_obvintsev" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-              <item name="libraries" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="lessons" type="b2602c69:ProjectViewProjectNode" />
-              <item name="thumbtack_online_school_2018_2_slava_obvintsev" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547892618210" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549261447026" />
     <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_201" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
@@ -109,8 +125,10 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.TestFirstSteps.testSortedDescendantMatrixRows">
     <configuration name="JUnitCore" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk1.8.0_201" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.junit.runner.JUnitCore" />
       <module name="lessons" />
       <option name="PROGRAM_PARAMETERS" value="$AffectedModuleNames$" />
@@ -119,6 +137,126 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestFirstSteps.testDiagonalMaxMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
+      <option name="METHOD_NAME" value="testDiagonalMaxMatrix" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFirstSteps.testIsPalindromeArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
+      <option name="METHOD_NAME" value="testIsPalindromeArray" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFirstSteps.testMaxMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
+      <option name="METHOD_NAME" value="testMaxMatrix" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
+      <option name="METHOD_NAME" value="testSortedDescendantMatrixRows" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFirstSteps.testSumMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
+      <option name="METHOD_NAME" value="testSumMatrix" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="MavenRunConfiguration" factoryName="Maven">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list />
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Application.JUnitCore" />
+      <item itemvalue="JUnit.TestFirstSteps.testDiagonalMaxMatrix" />
+      <item itemvalue="JUnit.TestFirstSteps.testIsPalindromeArray" />
+      <item itemvalue="JUnit.TestFirstSteps.testMaxMatrix" />
+      <item itemvalue="JUnit.TestFirstSteps.testSortedDescendantMatrixRows" />
+      <item itemvalue="JUnit.TestFirstSteps.testSumMatrix" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.TestFirstSteps.testSortedDescendantMatrixRows" />
+        <item itemvalue="JUnit.TestFirstSteps.testDiagonalMaxMatrix" />
+        <item itemvalue="JUnit.TestFirstSteps.testMaxMatrix" />
+        <item itemvalue="JUnit.TestFirstSteps.testSumMatrix" />
+        <item itemvalue="JUnit.TestFirstSteps.testIsPalindromeArray" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -141,6 +279,38 @@
     <option name="localTasksCounter" value="2" />
     <servers />
   </component>
+  <component name="TestHistory">
+    <history-entry file="TestFirstSteps_testSortedDescendantMatrixRows - 2019.02.04 at 11h 05m 04s.xml">
+      <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFirstSteps_testSortedDescendantMatrixRows - 2019.02.04 at 11h 05m 54s.xml">
+      <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFirstSteps_testSortedDescendantMatrixRows - 2019.02.04 at 11h 06m 06s.xml">
+      <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFirstSteps_testSortedDescendantMatrixRows - 2019.02.04 at 11h 06m 08s.xml">
+      <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFirstSteps_testSortedDescendantMatrixRows - 2019.02.04 at 11h 06m 42s.xml">
+      <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFirstSteps_testSortedDescendantMatrixRows - 2019.02.04 at 11h 06m 46s.xml">
+      <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFirstSteps_testSortedDescendantMatrixRows - 2019.02.04 at 11h 20m 41s.xml">
+      <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFirstSteps_testSortedDescendantMatrixRows - 2019.02.04 at 11h 20m 55s.xml">
+      <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFirstSteps_testSortedDescendantMatrixRows - 2019.02.04 at 11h 24m 06s.xml">
+      <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFirstSteps_testSortedDescendantMatrixRows - 2019.02.04 at 11h 24m 09s.xml">
+      <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" configurationId="JUnit" />
+    </history-entry>
+  </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
@@ -151,9 +321,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="826" height="984" extended-state="0" />
+    <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2911227" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26213592" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -162,8 +332,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32949308" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32258064" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39976957" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32949308" />
@@ -172,18 +342,46 @@
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32949308" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.24838188" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="right" id="Theme Preview" order="5" />
-      <window_info anchor="right" id="Maven" order="6" />
+      <window_info anchor="right" id="Maven" order="6" visible="true" weight="0.024271844" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
     </layout>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idea commit" />
     <option name="LAST_COMMIT_MESSAGE" value="idea commit" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java</url>
+          <line>264</line>
+          <properties />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/introduction/TestFirstSteps.java</url>
+          <line>229</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="JUnit">
+        <watch expression="arrayResult1" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
@@ -196,10 +394,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-561" />
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="343">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/introduction/TestFirstSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2720">
-          <caret line="160" column="36" selection-start-line="160" selection-start-column="36" selection-end-line="160" selection-end-column="36" />
+        <state relative-caret-position="265">
+          <caret line="229" selection-start-line="229" selection-end-line="229" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -208,8 +418,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        <state relative-caret-position="290">
+          <caret line="239" column="13" selection-start-line="239" selection-start-column="13" selection-end-line="239" selection-end-column="13" />
+          <folding>
+            <element signature="e#131#132#0" expanded="true" />
+            <element signature="e#159#160#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
