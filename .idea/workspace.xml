@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/introduction/TestFirstSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/introduction/TestFirstSteps.java" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,35 +22,6 @@
     <SUITE FILE_PATH="coverage/lessons$TestFirstSteps_testSortedDescendantMatrixRows.ic" NAME="TestFirstSteps.testSortedDescendantMatrixRows Coverage Results" MODIFIED="1548521057514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>net.thumbtack.school.introduction.*</FILTER>
     </SUITE>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="290">
-              <caret line="239" column="13" selection-start-line="239" selection-start-column="13" selection-end-line="239" selection-end-column="13" />
-              <folding>
-                <element signature="e#131#132#0" expanded="true" />
-                <element signature="e#159#160#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/introduction/TestFirstSteps.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="229" selection-start-line="229" selection-end-line="229" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <dirStrings>
@@ -86,6 +61,7 @@
     <option name="width" value="598" />
     <option name="height" value="984" />
   </component>
+  <component name="ProjectId" id="287etcwfQdJc0XSHl4VkXUqxvKO" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -106,33 +82,41 @@
       <pane id="Scope" />
     </panes>
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549261447026" />
-    <property name="last_opened_file_path" value="C:/Program Files/Java/jdk1.8.0_201" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_201" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="JUnit.TestFirstSteps.testSortedDescendantMatrixRows">
+  <component name="RunManager" selected="JUnit.TestFirstSteps.testMul">
     <configuration name="JUnitCore" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="C:/Program Files/Java/jdk1.8.0_201" />
+      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_201" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.junit.runner.JUnitCore" />
       <module name="lessons" />
       <option name="PROGRAM_PARAMETERS" value="$AffectedModuleNames$" />
-      <option name="WORKING_DIRECTORY" value="C:/Program Files/Java/jdk1.8.0_201" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_201" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestFirstSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -148,22 +132,6 @@
       <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
       <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
       <option name="METHOD_NAME" value="testDiagonalMaxMatrix" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestFirstSteps.testIsPalindromeArray" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lessons" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
-      <option name="METHOD_NAME" value="testIsPalindromeArray" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -185,6 +153,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestFirstSteps.testMul" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
+      <option name="METHOD_NAME" value="testMul" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
@@ -196,22 +180,6 @@
       <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
       <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
       <option name="METHOD_NAME" value="testSortedDescendantMatrixRows" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestFirstSteps.testSumMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lessons" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
-      <option name="METHOD_NAME" value="testSumMatrix" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -242,22 +210,23 @@
     </configuration>
     <list>
       <item itemvalue="Application.JUnitCore" />
-      <item itemvalue="JUnit.TestFirstSteps.testDiagonalMaxMatrix" />
-      <item itemvalue="JUnit.TestFirstSteps.testIsPalindromeArray" />
       <item itemvalue="JUnit.TestFirstSteps.testMaxMatrix" />
+      <item itemvalue="JUnit.TestFirstSteps.testDiagonalMaxMatrix" />
       <item itemvalue="JUnit.TestFirstSteps.testSortedDescendantMatrixRows" />
-      <item itemvalue="JUnit.TestFirstSteps.testSumMatrix" />
+      <item itemvalue="JUnit.TestFirstSteps" />
+      <item itemvalue="JUnit.TestFirstSteps.testMul" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestFirstSteps.testMul" />
+        <item itemvalue="JUnit.TestFirstSteps" />
         <item itemvalue="JUnit.TestFirstSteps.testSortedDescendantMatrixRows" />
         <item itemvalue="JUnit.TestFirstSteps.testDiagonalMaxMatrix" />
         <item itemvalue="JUnit.TestFirstSteps.testMaxMatrix" />
-        <item itemvalue="JUnit.TestFirstSteps.testSumMatrix" />
-        <item itemvalue="JUnit.TestFirstSteps.testIsPalindromeArray" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -352,27 +321,22 @@
       <window_info anchor="right" id="Coverage" order="8" side_tool="true" />
     </layout>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idea commit" />
     <option name="LAST_COMMIT_MESSAGE" value="idea commit" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java</url>
-          <line>264</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/net/thumbtack/school/introduction/TestFirstSteps.java</url>
-          <line>229</line>
-          <properties />
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="arrayResult1" />
@@ -399,7 +363,7 @@
         <state relative-caret-position="-561" />
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+    <entry file="jar://$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_201/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />

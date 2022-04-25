@@ -221,7 +221,7 @@ public class TestFirstSteps {
         assertEquals(Integer.MIN_VALUE, firstSteps.max(matrix3));
     }
 
- /*   @Test
+    @Test
     public void testSortedDescendantMatrixRows() {
         FirstSteps firstSteps = new FirstSteps();
         int[][] matrix1 = {{3, 2, 1}, {5, 4, 3}, {8, 7, 6}};
@@ -235,5 +235,4 @@ public class TestFirstSteps {
         int[][] matrix5 = {{5, 4, 3, 2, 1}, {12, 5, 4, 3}, {34, 12, 10, 9, 8, 7, 6}};
         assertTrue(firstSteps.isSortedDescendant(matrix5));
     }
-*/
 }
