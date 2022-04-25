@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="">
+    <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="running the course from the beginning...&#10;tasks are all done">
       <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
@@ -334,7 +334,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idea commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="idea commit" />
+    <MESSAGE value="running the course from the beginning...&#10;tasks are all done" />
+    <option name="LAST_COMMIT_MESSAGE" value="running the course from the beginning...&#10;tasks are all done" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
