@@ -5,23 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="running the course from the beginning...&#10;tasks are all done">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_9_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v1/Desktop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v1/PictureFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v1/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v1/RectPicture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v1/RoundPicture.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/introduction/FirstSteps.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/introduction/TestFirstSteps.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/introduction/TestFirstSteps.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lessons.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/lessons$TestFirstSteps_testSortedDescendantMatrixRows.ic" NAME="TestFirstSteps.testSortedDescendantMatrixRows Coverage Results" MODIFIED="1548521057514" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>net.thumbtack.school.introduction.*</FILTER>
     </SUITE>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <dirStrings>
@@ -87,14 +107,16 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549261447026" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_201" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Facets" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
-  <component name="RunManager" selected="JUnit.TestFirstSteps.testMul">
+  <component name="RunManager" selected="JUnit.TestPictureFactory">
     <configuration name="JUnitCore" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_201" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -106,81 +128,77 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFirstSteps" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDesktop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.v1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v1" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v1.TestDesktop" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFirstSteps.testDiagonalMaxMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPictureFactory" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.v1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
-      <option name="METHOD_NAME" value="testDiagonalMaxMatrix" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v1" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v1.TestPictureFactory" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFirstSteps.testMaxMatrix" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPoint" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.v1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
-      <option name="METHOD_NAME" value="testMaxMatrix" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v1" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v1.TestPoint" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFirstSteps.testMul" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRectPicture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.v1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
-      <option name="METHOD_NAME" value="testMul" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v1" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v1.TestRectPicture" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFirstSteps.testSortedDescendantMatrixRows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestRoundPicture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.introduction.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.v1.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.introduction" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.introduction.TestFirstSteps" />
-      <option name="METHOD_NAME" value="testSortedDescendantMatrixRows" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v1" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v1.TestRoundPicture" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -210,19 +228,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.JUnitCore" />
-      <item itemvalue="JUnit.TestFirstSteps.testMaxMatrix" />
-      <item itemvalue="JUnit.TestFirstSteps.testDiagonalMaxMatrix" />
-      <item itemvalue="JUnit.TestFirstSteps.testSortedDescendantMatrixRows" />
-      <item itemvalue="JUnit.TestFirstSteps" />
-      <item itemvalue="JUnit.TestFirstSteps.testMul" />
+      <item itemvalue="JUnit.TestPoint" />
+      <item itemvalue="JUnit.TestRectPicture" />
+      <item itemvalue="JUnit.TestRoundPicture" />
+      <item itemvalue="JUnit.TestDesktop" />
+      <item itemvalue="JUnit.TestPictureFactory" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestFirstSteps.testMul" />
-        <item itemvalue="JUnit.TestFirstSteps" />
-        <item itemvalue="JUnit.TestFirstSteps.testSortedDescendantMatrixRows" />
-        <item itemvalue="JUnit.TestFirstSteps.testDiagonalMaxMatrix" />
-        <item itemvalue="JUnit.TestFirstSteps.testMaxMatrix" />
+        <item itemvalue="JUnit.TestPictureFactory" />
+        <item itemvalue="JUnit.TestRoundPicture" />
+        <item itemvalue="JUnit.TestRectPicture" />
+        <item itemvalue="JUnit.TestPoint" />
+        <item itemvalue="JUnit.TestDesktop" />
       </list>
     </recent_temporary>
   </component>
@@ -331,6 +349,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="idea commit" />
