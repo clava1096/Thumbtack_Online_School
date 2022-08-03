@@ -73,26 +73,6 @@ public class RoundPicture {
         this.radius = (int)(this.radius*ratio);
         if (radius == 0) radius=1;
     }
-
-    /*cout << "Введите координаты центра окружности:" << endl;
-    int Xc, Yc;
-    cin >> Xc >> Yc;
-    cout << "Введите радиус:" << endl;
-    int r;
-    cin >> r;
-    cout << "Введите координаты точки:" << endl;
-    int x, y;
-    cin >> x >> y;
-    if (((x - Xc) * (x - Xc) + (y - Yc) * (y - Yc)) < r * r) {
-        cout << "Точка принадлежит окружности." << endl;
-    } else if (((x - Xc) * (x - Xc) + (y - Yc) * (y - Yc)) == r * r) {
-        cout << "Точка лежит на окружности." << endl;
-    } else {
-        cout << "Точка не принадлежит окружности." << endl;
-    }*/
-
-
-
     public boolean isInside(int x, int y){
         int Xc = center.getX(), Yc = center.getY();
         if(((x - Xc) * (x - Xc) + (y - Yc) * (y - Yc)) <= radius * radius){
