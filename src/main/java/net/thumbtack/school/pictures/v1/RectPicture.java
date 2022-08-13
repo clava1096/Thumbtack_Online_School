@@ -45,9 +45,13 @@ public class RectPicture {
     }
     public void setTopLeft(Point topLeft){
         this.topLeft = topLeft;
+        width = bottomRight.getX()-topLeft.getX()+1;
+        height = bottomRight.getY() - topLeft.getY()+1;
     }
     public void setBottomRight(Point bottomRight){
         this.bottomRight = bottomRight;
+        width = bottomRight.getX()-topLeft.getX()+1;
+        height = bottomRight.getY() - topLeft.getY()+1;
     }
     public int getWidth(){
         return width;
@@ -76,18 +80,15 @@ public class RectPicture {
         bottomRight = new Point(bottomRight.getX()-old_w+width, bottomRight.getY()-old_h+height);
     }
     public boolean isInside(int x, int y){
-        if (bottomRight.getX()>=x & bottomRight.getY() >=y & x >= topLeft.getX() & y >= topLeft.getY()) { return true;}
-        else return false;
+        return bottomRight.getX() >= x & bottomRight.getY() >= y & x >= topLeft.getX() & y >= topLeft.getY();
     }
     public boolean isInside(Point point) {
-        if (bottomRight.getX()>=point.getX() & bottomRight.getY() >= point.getY() & point.getX() >= topLeft.getX() & point.getY() >= topLeft.getY()) { return true;}
-        else return false;
+        return bottomRight.getX() >= point.getX() & bottomRight.getY() >= point.getY() & point.getX() >= topLeft.getX() & point.getY() >= topLeft.getY();
     }
 
     public boolean isIntersects(RectPicture rectPicture){
         if (bottomRight.getY() <  rectPicture.topLeft.getY() || rectPicture.bottomRight.getY() < topLeft.getY()) return false;
-        if (bottomRight.getX() < rectPicture.topLeft.getX() || rectPicture.bottomRight.getX() < topLeft.getX()) return  false;
-        return true;
+        return bottomRight.getX() >= rectPicture.topLeft.getX() && rectPicture.bottomRight.getX() >= topLeft.getX();
     }
     public boolean isInside(RectPicture rectPicture){
         return (rectPicture.bottomRight.getX() <= bottomRight.getX() && topLeft.getX() <=rectPicture.topLeft.getX() &&
@@ -95,10 +96,7 @@ public class RectPicture {
     }
 
     public boolean isFullyVisibleOnDesktop(Desktop desktop) {
-        //if (desktop.getWidth() >= getWidth()-topLeft.getX() && desktop.getHeight() >= getHeight()-topLeft.getY()) return true;
-        //return false;
-        if (topLeft.getY()>=0 & topLeft.getX() >=0 & bottomRight.getX()<640 & bottomRight.getY()<480) return true;
-        return false;
+        return topLeft.getY() >= 0 & topLeft.getX() >= 0 & bottomRight.getX() < 640 & bottomRight.getY() < 480;
     }
 
     @Override
