@@ -4,11 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="third">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v1/SignedRectPicture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v1/SignedRoundPicture.java" afterDir="false" />
+    <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="fourth">
+      <change afterPath="$PROJECT_DIR$/.idea/discord.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_23_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/Movable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/Resizable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/Signed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/Picture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/PictureFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/Point.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/RectPicture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/RoundPicture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/SignedRectPicture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/SignedRoundPicture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v2/Cursor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v2/Desktop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v2/Icon.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v1/RectPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v1/RectPicture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v1/SignedRectPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v1/SignedRectPicture.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,6 +41,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -69,6 +85,9 @@
     <option name="height" value="984" />
   </component>
   <component name="ProjectId" id="287etcwfQdJc0XSHl4VkXUqxvKO" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -94,6 +113,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
@@ -103,8 +123,15 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="JUnit.TestRectPicture">
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="net.thumbtack.school.winobjects.v2" />
+      <recent name="net.thumbtack.school" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.TestIcon">
     <configuration name="JUnitCore" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_201" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -116,63 +143,47 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRectPicture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestCursor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.pictures.v1.*" />
+          <option name="PATTERN" value="net.thumbtack.school.winobjects.v2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v1" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v1.TestRectPicture" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.winobjects.v2" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.winobjects.v2.TestCursor" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRoundPicture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestDesktop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.pictures.v1.*" />
+          <option name="PATTERN" value="net.thumbtack.school.winobjects.v2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v1" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v1.TestRoundPicture" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.winobjects.v2" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.winobjects.v2.TestDesktop" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestSignedRectPicture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestIcon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.pictures.v1.*" />
+          <option name="PATTERN" value="net.thumbtack.school.winobjects.v2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v1" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v1.TestSignedRectPicture" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.winobjects.v2" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.winobjects.v2.TestIcon" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestSignedRectPicture.testSetRectPicture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lessons" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.pictures.v1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v1" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v1.TestSignedRectPicture" />
-      <option name="METHOD_NAME" value="testSetRectPicture" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -181,12 +192,27 @@
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.pictures.v1.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.v2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v1" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v1.TestSignedRoundPicture" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v2" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v2.TestSignedRoundPicture" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestTypes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.types.v2.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.types.v2" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.types.v2.TestTypes" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -217,19 +243,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.JUnitCore" />
-      <item itemvalue="JUnit.TestSignedRectPicture" />
-      <item itemvalue="JUnit.TestSignedRectPicture.testSetRectPicture" />
       <item itemvalue="JUnit.TestSignedRoundPicture" />
-      <item itemvalue="JUnit.TestRoundPicture" />
-      <item itemvalue="JUnit.TestRectPicture" />
+      <item itemvalue="JUnit.TestTypes" />
+      <item itemvalue="JUnit.TestCursor" />
+      <item itemvalue="JUnit.TestDesktop" />
+      <item itemvalue="JUnit.TestIcon" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestRectPicture" />
-        <item itemvalue="JUnit.TestRoundPicture" />
+        <item itemvalue="JUnit.TestIcon" />
+        <item itemvalue="JUnit.TestDesktop" />
+        <item itemvalue="JUnit.TestCursor" />
+        <item itemvalue="JUnit.TestTypes" />
         <item itemvalue="JUnit.TestSignedRoundPicture" />
-        <item itemvalue="JUnit.TestSignedRectPicture" />
-        <item itemvalue="JUnit.TestSignedRectPicture.testSetRectPicture" />
       </list>
     </recent_temporary>
   </component>
@@ -287,7 +313,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660151137209</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fourth">
+      <created>1660399693152</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1660399693152</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -376,12 +409,14 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="idea commit" />
     <MESSAGE value="running the course from the beginning...&#10;tasks are all done" />
     <MESSAGE value="tasks are all done" />
     <MESSAGE value="second" />
     <MESSAGE value="third" />
-    <option name="LAST_COMMIT_MESSAGE" value="third" />
+    <MESSAGE value="fourth" />
+    <option name="LAST_COMMIT_MESSAGE" value="fourth" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

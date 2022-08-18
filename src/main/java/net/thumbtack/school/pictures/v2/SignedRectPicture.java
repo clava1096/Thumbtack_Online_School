@@ -1,8 +1,13 @@
-package net.thumbtack.school.pictures.v1;
+package net.thumbtack.school.pictures.v2;
+
+import net.thumbtack.school.iface.Movable;
+import net.thumbtack.school.iface.Resizable;
+import net.thumbtack.school.iface.Signed;
+import net.thumbtack.school.winobjects.v2.Desktop;
 
 import java.util.Objects;
 
-public class SignedRectPicture extends RectPicture{
+public class SignedRectPicture extends RectPicture implements Resizable, Movable, Signed {
     String signature;
 
     public SignedRectPicture(Point topLeft, Point bottomRight, int format, String signature){
@@ -50,9 +55,6 @@ public class SignedRectPicture extends RectPicture{
     }
     public void moveTo(int x, int y){
         super.moveTo(x,y);
-    }
-    public void moveTo(Point point){
-        super.moveTo(point);
     }
     public void moveRel(int dx, int dy){
         super.moveRel(dx, dy);

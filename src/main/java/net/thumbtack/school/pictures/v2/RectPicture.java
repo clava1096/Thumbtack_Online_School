@@ -1,8 +1,12 @@
-package net.thumbtack.school.pictures.v1;
+package net.thumbtack.school.pictures.v2;
+
+import net.thumbtack.school.iface.Movable;
+import net.thumbtack.school.iface.Resizable;
+import net.thumbtack.school.winobjects.v2.Desktop;
 
 import java.util.Objects;
 
-public class RectPicture {
+public class RectPicture extends Picture implements Resizable, Movable {
     private Point topLeft, bottomRight;
     private int format, width, height;
     public RectPicture(Point topLeft, Point bottomRight, int format){
@@ -64,7 +68,7 @@ public class RectPicture {
         this.bottomRight = new Point(width+x-1, y+height-1);
     }
     public void moveTo(Point point){
-        topLeft.moveTo(point.getX(),point.getY());
+        topLeft = new Point(point.getX(),point.getY());
         bottomRight = new Point(width+point.getX()-1, point.getY()+height-1);
     }
     public void moveRel(int dx, int dy){
