@@ -4,44 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="six">
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/exceptions/v3/GraphicErrorCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/exceptions/v3/GraphicException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/v3/Movable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/v3/Resizable.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/v3/Signed.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v3/PictureFormat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v3/Cursor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v3/CursorForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v3/Desktop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v3/Icon.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestPicture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestPictureFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestRectPicture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestRoundPicture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestSignedRectPicture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestSignedRoundPicture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/types/v3/TestTypes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/winobjects/v3/TestCursor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/winobjects/v3/TestDesktop.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/winobjects/v3/TestIcon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lessons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lessons.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/Movable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/v2/Movable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/Resizable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/v2/Resizable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/Signed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/v2/Signed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/Picture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/RectPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/RectPicture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/RoundPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/RoundPicture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/SignedRectPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/SignedRectPicture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/SignedRoundPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/SignedRoundPicture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v2/Cursor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v2/Cursor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v2/Icon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v2/Icon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v2/TestPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v2/TestPicture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/types/v2/TestTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/types/v2/TestTypes.java" afterDir="false" />
-    </list>
+    <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="six" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
