@@ -1,7 +1,7 @@
 package net.thumbtack.school.pictures.v2;
 
-import net.thumbtack.school.iface.Movable;
-import net.thumbtack.school.iface.Resizable;
+import net.thumbtack.school.iface.v2.Movable;
+import net.thumbtack.school.iface.v2.Resizable;
 import net.thumbtack.school.winobjects.v2.Desktop;
 
 import java.util.Objects;
@@ -74,18 +74,12 @@ public class RoundPicture implements Resizable, Movable {
     }
     public boolean isInside(int x, int y){
         int Xc = center.getX(), Yc = center.getY();
-        if(((x - Xc) * (x - Xc) + (y - Yc) * (y - Yc)) <= radius * radius){
-            return true;
-        }
-        return false;
+        return ((x - Xc) * (x - Xc) + (y - Yc) * (y - Yc)) <= radius * radius;
     }
 
     public boolean isInside(Point point){
         int Xc = center.getX(), Yc = center.getY();
-        if(((point.getX() - Xc) * (point.getX() - Xc) + (point.getY() - Yc) * (point.getY() - Yc))<=radius*radius ){
-            return true;
-        }
-        return false;
+        return ((point.getX() - Xc) * (point.getX() - Xc) + (point.getY() - Yc) * (point.getY() - Yc)) <= radius * radius;
     }
 
     public boolean isFullyVisibleOnDesktop(Desktop desktop){
@@ -93,8 +87,7 @@ public class RoundPicture implements Resizable, Movable {
         int xRight = center.getX()+radius; // <=640
         int yUp = center.getY()+radius; // <=480
         int yDown = center.getY()-radius; // >=0
-        if (xLeft >=0 && xRight < desktop.getWidth() && yUp <desktop.getHeight() && yDown>=0) return true;
-        return false;
+        return xLeft >= 0 && xRight < desktop.getWidth() && yUp < desktop.getHeight() && yDown >= 0;
     }
 
     @Override

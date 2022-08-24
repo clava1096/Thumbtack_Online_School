@@ -1,23 +1,28 @@
-package net.thumbtack.school.winobjects.v2;
+package net.thumbtack.school.winobjects.v3;
 
-import net.thumbtack.school.iface.v2.Movable;
-import net.thumbtack.school.iface.v2.Signed;
-import net.thumbtack.school.pictures.v2.Point;
+import net.thumbtack.school.exceptions.v3.GraphicException;
+import net.thumbtack.school.iface.v3.Movable;
+import net.thumbtack.school.iface.v3.Signed;
+import net.thumbtack.school.pictures.v3.Point;
 
 public class Icon implements Movable, Signed {
     int x,y; String signature;
-    public Icon(int x,int y, String signature){
+    public Icon(int x,int y, String signature) throws GraphicException {
         this.x = x;
         this.y = y;
+        Signed.checkSignature(signature);
         this.signature = signature;
     }
-    public Icon(Point point, String signature) {
+    public Icon(Point point, String signature) throws GraphicException {
         this.x = point.getX();
         this.y = point.getY();
+        Signed.checkSignature(signature);
         this.signature = signature;
+
     }
 
-    public void setSignature(String signature){
+    public void setSignature(String signature) throws GraphicException{
+        Signed.checkSignature(signature);
         this.signature = signature;
     }
 

@@ -1,7 +1,6 @@
 package net.thumbtack.school.pictures.v2;
 
-import net.thumbtack.school.iface.Movable;
-import net.thumbtack.school.iface.Resizable;
+import net.thumbtack.school.iface.v2.Movable;
 import net.thumbtack.school.winobjects.v2.Desktop;
 import org.junit.jupiter.api.Test;
 
@@ -76,14 +75,13 @@ public class TestPicture {
         assertTrue(picture.isFullyVisibleOnDesktop(desktop));
         picture.moveTo(-100, 100);
         assertFalse(picture.isFullyVisibleOnDesktop(desktop));
-        Movable movable = picture;
-        movable.moveTo(739, 479);
+        ((Movable) picture).moveTo(739, 479);
         assertFalse(picture.isFullyVisibleOnDesktop(desktop));
-        movable.moveTo(0, 479);
+        ((Movable) picture).moveTo(0, 479);
         assertFalse(picture.isFullyVisibleOnDesktop(desktop));
-        movable.moveTo(739, 0);
+        ((Movable) picture).moveTo(739, 0);
         assertFalse(picture.isFullyVisibleOnDesktop(desktop));
-        movable.moveRel(-739, 0);
+        picture.moveRel(-739, 0);
         assertTrue(picture.isFullyVisibleOnDesktop(desktop));
     }
 
@@ -92,10 +90,9 @@ public class TestPicture {
         Desktop desktop = new Desktop();
         Picture picture = new RectPicture(0, 0, 320, 240, 1);
         assertTrue(picture.isFullyVisibleOnDesktop(desktop));
-        Resizable resizable = picture;
-        resizable.resize(2);
+        picture.resize(2);
         assertTrue(picture.isFullyVisibleOnDesktop(desktop));
-        resizable.resize(2);
+        picture.resize(2);
         assertFalse(picture.isFullyVisibleOnDesktop(desktop));
     }
 }
