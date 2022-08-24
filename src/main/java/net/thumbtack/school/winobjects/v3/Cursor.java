@@ -1,29 +1,30 @@
-package net.thumbtack.school.winobjects.v2;
+package net.thumbtack.school.winobjects.v3;
 
-import net.thumbtack.school.iface.v2.Movable;
-import net.thumbtack.school.pictures.v2.Point;
+import net.thumbtack.school.iface.v3.Movable;
+import net.thumbtack.school.pictures.v3.Point;
 
 import java.util.Objects;
 
 public class Cursor implements Movable {
-    private int x,y, cursorForm;
-    public Cursor(int x, int y, int cursorForm){
+    private int x,y;
+    private CursorForm cursorForm;
+    public Cursor(int x, int y, CursorForm cursorForm){
         this.cursorForm = cursorForm;
         this.y = y;
         this.x = x;
     }
 
-    public Cursor(Point point, int cursorForm){
+    public Cursor(Point point, CursorForm cursorForm){
         this.cursorForm = cursorForm;
         this.x = point.getX();
         this.y = point.getY();
     }
 
-    public int getCursorForm(){
+    public CursorForm getCursorForm(){
         return cursorForm;
     }
 
-    public void setCursorForm(int cursorForm){
+    public void setCursorForm(CursorForm cursorForm){
         this.cursorForm = cursorForm;
     }
 

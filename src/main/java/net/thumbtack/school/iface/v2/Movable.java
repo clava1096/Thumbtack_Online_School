@@ -1,4 +1,4 @@
-package net.thumbtack.school.iface;
+package net.thumbtack.school.iface.v2;
 
 import net.thumbtack.school.pictures.v2.Point;
 

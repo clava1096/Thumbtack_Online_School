@@ -1,8 +1,8 @@
 package net.thumbtack.school.pictures.v2;
 
-import net.thumbtack.school.iface.Movable;
-import net.thumbtack.school.iface.Resizable;
-import net.thumbtack.school.iface.Signed;
+import net.thumbtack.school.iface.v2.Movable;
+import net.thumbtack.school.iface.v2.Resizable;
+import net.thumbtack.school.iface.v2.Signed;
 import net.thumbtack.school.winobjects.v2.Desktop;
 
 import java.util.Objects;

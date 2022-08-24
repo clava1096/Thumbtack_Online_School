@@ -4,8 +4,43 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="five">
+    <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="six">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/exceptions/v3/GraphicErrorCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/exceptions/v3/GraphicException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/v3/Movable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/v3/Resizable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/v3/Signed.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v3/PictureFormat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v3/Cursor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v3/CursorForm.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v3/Desktop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v3/Icon.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestPicture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestPictureFactory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestPoint.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestRectPicture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestRoundPicture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestSignedRectPicture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v3/TestSignedRoundPicture.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/types/v3/TestTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/winobjects/v3/TestCursor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/winobjects/v3/TestDesktop.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/winobjects/v3/TestIcon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lessons.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/Movable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/v2/Movable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/Resizable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/v2/Resizable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/Signed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/iface/v2/Signed.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/Picture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/RectPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/RectPicture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/RoundPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/RoundPicture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/SignedRectPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/SignedRectPicture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/SignedRoundPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/v2/SignedRoundPicture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v2/Cursor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v2/Cursor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v2/Icon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/winobjects/v2/Icon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v2/TestPicture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/v2/TestPicture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/types/v2/TestTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/types/v2/TestTypes.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +59,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -35,6 +71,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -100,12 +144,12 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549261447026" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Facets" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Program Files/Java/jre1.8.0_291" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -113,58 +157,64 @@
       <recent name="net.thumbtack.school" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestIcon">
+  <component name="RunManager" selected="Application.JUnitCore">
     <configuration name="JUnitCore" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_201" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.junit.runner.JUnitCore" />
       <module name="lessons" />
       <option name="PROGRAM_PARAMETERS" value="$AffectedModuleNames$" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_201" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Program Files/Java/jre1.8.0_291" />
+      <extension name="coverage" sample_coverage="false" track_test_folders="true">
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.pictures.v3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.winobjects.v3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.types.v3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.iface.v3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.exceptions.v3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCursor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPicture (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.winobjects.v2.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.v2.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.winobjects.v2" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.winobjects.v2.TestCursor" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v2" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v2.TestPicture" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDesktop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestPicture" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
-      <extension name="coverage">
+      <extension name="coverage" sample_coverage="false" runner="jacoco">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.winobjects.v2.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.v3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.winobjects.v2" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.winobjects.v2.TestDesktop" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestIcon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="lessons" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.winobjects.v2.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.winobjects.v2" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.winobjects.v2.TestIcon" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v3" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v3.TestPicture" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -174,13 +224,29 @@
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.pictures.v2.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.v3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v2" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v2.TestSignedRoundPicture" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v3" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v3.TestSignedRoundPicture" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestSignedRoundPicture.testSignedRoundPicture1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="lessons" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.thumbtack.school.pictures.v3.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.v3" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.v3.TestSignedRoundPicture" />
+      <option name="METHOD_NAME" value="testSignedRoundPicture1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -189,12 +255,14 @@
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.types.v2.*" />
+          <option name="PATTERN" value="net.thumbtack.school.types.v3.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.types.v2" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.types.v2.TestTypes" />
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.types.v3" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.types.v3.TestTypes" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -225,18 +293,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.JUnitCore" />
-      <item itemvalue="JUnit.TestSignedRoundPicture" />
       <item itemvalue="JUnit.TestTypes" />
-      <item itemvalue="JUnit.TestCursor" />
-      <item itemvalue="JUnit.TestDesktop" />
-      <item itemvalue="JUnit.TestIcon" />
+      <item itemvalue="JUnit.TestPicture" />
+      <item itemvalue="JUnit.TestSignedRoundPicture.testSignedRoundPicture1" />
+      <item itemvalue="JUnit.TestSignedRoundPicture" />
+      <item itemvalue="JUnit.TestPicture (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestIcon" />
-        <item itemvalue="JUnit.TestDesktop" />
-        <item itemvalue="JUnit.TestCursor" />
+        <item itemvalue="JUnit.TestPicture (1)" />
         <item itemvalue="JUnit.TestTypes" />
+        <item itemvalue="JUnit.TestPicture" />
+        <item itemvalue="JUnit.TestSignedRoundPicture.testSignedRoundPicture1" />
         <item itemvalue="JUnit.TestSignedRoundPicture" />
       </list>
     </recent_temporary>
@@ -309,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660825923461</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="five">
+      <created>1660895127420</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1660895127420</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -405,9 +480,18 @@
     <MESSAGE value="second" />
     <MESSAGE value="third" />
     <MESSAGE value="fourth" />
-    <option name="LAST_COMMIT_MESSAGE" value="fourth" />
+    <MESSAGE value="five" />
+    <option name="LAST_COMMIT_MESSAGE" value="five" />
   </component>
   <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NullPointerException" package="java.lang" />
+          <option name="timeStamp" value="2" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
     <watches-manager>
       <configuration name="JUnit">
         <watch expression="arrayResult1" />
@@ -417,6 +501,60 @@
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestRectPicture.ic" NAME="TestRectPicture Coverage Results" MODIFIED="1661333519368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestPicture__1_.ic" NAME="TestPicture (1) Coverage Results" MODIFIED="1661253779451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestCursor.ic" NAME="TestCursor Coverage Results" MODIFIED="1661290060608" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.winobjects.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestSignedRoundPicture.ic" NAME="TestSignedRoundPicture Coverage Results" MODIFIED="1661334527059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$JUnitCore.ic" NAME="JUnitCore Coverage Results" MODIFIED="1661334539630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+      <FILTER>net.thumbtack.school.winobjects.v3.*</FILTER>
+      <FILTER>net.thumbtack.school.types.v3.*</FILTER>
+      <FILTER>net.thumbtack.school.iface.v3.*</FILTER>
+      <FILTER>net.thumbtack.school.exceptions.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestPictureFactory.ic" NAME="TestPictureFactory Coverage Results" MODIFIED="1661253318326" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestPicture.ic" NAME="TestPicture Coverage Results" MODIFIED="1661333931650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestIcon.ic" NAME="TestIcon Coverage Results" MODIFIED="1661332182665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.winobjects.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestPicture_testFormat1.ic" NAME="TestPicture.testFormat1 Coverage Results" MODIFIED="1661333571271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestPicture_testWrongSettings.ic" NAME="TestPicture.testWrongSettings Coverage Results" MODIFIED="1661253005761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestRectPicture_testRectPicture1.ic" NAME="TestRectPicture.testRectPicture1 Coverage Results" MODIFIED="1661253295176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestPictureFactory_testPictureFactory.ic" NAME="TestPictureFactory.testPictureFactory Coverage Results" MODIFIED="1661253575068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestTypes.ic" NAME="TestTypes Coverage Results" MODIFIED="1661334669295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>net.thumbtack.school.types.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestPicture.exec" NAME="TestPicture Coverage Results" MODIFIED="1661334766309" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestTypes.exec" NAME="TestTypes Coverage Results" MODIFIED="1661334733058" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.types.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestRectPicture_testRectPicture5.ic" NAME="TestRectPicture.testRectPicture5 Coverage Results" MODIFIED="1661252534613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitlab-ci.yml">
