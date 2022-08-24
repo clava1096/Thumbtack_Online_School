@@ -1,8 +1,10 @@
-package net.thumbtack.school.winobjects.v2;
+package net.thumbtack.school.winobjects.v3;
 
-import net.thumbtack.school.iface.v2.Movable;
-import net.thumbtack.school.iface.v2.Signed;
-import net.thumbtack.school.pictures.v2.Point;
+import net.thumbtack.school.exceptions.v3.GraphicErrorCode;
+import net.thumbtack.school.exceptions.v3.GraphicException;
+import net.thumbtack.school.iface.v3.Movable;
+import net.thumbtack.school.iface.v3.Signed;
+import net.thumbtack.school.pictures.v3.Point;
 
 public class Icon implements Movable, Signed {
     int x,y; String signature;
@@ -11,13 +13,16 @@ public class Icon implements Movable, Signed {
         this.y = y;
         this.signature = signature;
     }
-    public Icon(Point point, String signature) {
+    public Icon(Point point, String signature) throws GraphicException {
         this.x = point.getX();
         this.y = point.getY();
+        checkSignature(signature);
         this.signature = signature;
+
     }
 
-    public void setSignature(String signature){
+    public void setSignature(String signature) throws GraphicException{
+        checkSignature(signature);
         this.signature = signature;
     }
 
@@ -43,6 +48,12 @@ public class Icon implements Movable, Signed {
     public void moveRel(int dx, int dy){
         this.x = this.x + dx;
         this.y = this.y + dy;
+    }
+
+    private static void checkSignature(String signature) throws GraphicException {
+        if(signature == null){
+            throw new GraphicException(GraphicErrorCode.NULL_SIGNATURE);
+        }
     }
 
 }

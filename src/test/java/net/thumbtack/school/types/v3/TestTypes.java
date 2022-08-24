@@ -1,11 +1,14 @@
-package net.thumbtack.school.types.v2;
+package net.thumbtack.school.types.v3;
 
-import net.thumbtack.school.iface.v2.Movable;
-import net.thumbtack.school.iface.v2.Resizable;
-import net.thumbtack.school.iface.v2.Signed;
-import net.thumbtack.school.pictures.v2.*;
-import net.thumbtack.school.winobjects.v2.Cursor;
-import net.thumbtack.school.winobjects.v2.Icon;
+import net.thumbtack.school.exceptions.v3.GraphicErrorCode;
+import net.thumbtack.school.exceptions.v3.GraphicException;
+import net.thumbtack.school.pictures.v3.*;
+import net.thumbtack.school.winobjects.v3.Cursor;
+import net.thumbtack.school.iface.v3.Movable;
+import net.thumbtack.school.iface.v3.Resizable;
+import net.thumbtack.school.iface.v3.Signed;
+import net.thumbtack.school.winobjects.v3.CursorForm;
+import net.thumbtack.school.winobjects.v3.Icon;
 import org.junit.jupiter.api.Test;
 
 import java.lang.reflect.Modifier;
@@ -36,5 +39,10 @@ public class TestTypes {
         assertTrue(isAbstract(Picture.class));
         assertFalse(isAbstract(RectPicture.class));
         assertFalse(isAbstract(RoundPicture.class));
+        assertTrue(PictureFormat.class.isEnum());
+        assertTrue(CursorForm.class.isEnum());
+        assertTrue(GraphicErrorCode.class.isEnum());
+        assertTrue(Exception.class.isAssignableFrom(GraphicException.class));
+        assertFalse(RuntimeException.class.isAssignableFrom(GraphicException.class));
     }
 }
