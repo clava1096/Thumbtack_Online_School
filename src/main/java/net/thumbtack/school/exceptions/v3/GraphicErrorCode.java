@@ -3,10 +3,11 @@ package net.thumbtack.school.exceptions.v3;
 public enum GraphicErrorCode {
     WRONG_PICTURE_FORMAT("WRONG_PICTURE_FORMAT"),
     NULL_PICTURE_FORMAT("NULL_PICTURE_FORMAT"),
-    NULL_SIGNATURE("NULL_SIGNATURE");
+    NULL_SIGNATURE("NULL_SIGNATURE"),
+    NULL_PICTURE("NULL_PICTURE");
     private String errorString;
 
-    private GraphicErrorCode(String errorString){
+    GraphicErrorCode(String errorString){
         this.errorString = errorString;
     }
 

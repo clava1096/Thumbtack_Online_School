@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="six" />
+    <list default="true" id="b6f7c6e0-3b67-436d-b55f-3ca66715b41c" name="Default Changelist" comment="six">
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/managers/ArrayManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/managers/Manager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/managers/NamedManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/pictures/managers/PairManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/thumbtack/school/pictures/managers/TestManagers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lessons.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lessons.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/exceptions/v3/GraphicErrorCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/thumbtack/school/exceptions/v3/GraphicErrorCode.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -98,8 +108,8 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1549261447026" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Facets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Program Files/Java/jre1.8.0_291" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -111,89 +121,93 @@
       <recent name="net.thumbtack.school" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestNumberOperations">
+  <component name="RunManager" selected="JUnit.TestManagers">
     <configuration name="JUnitCore" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_201" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="org.junit.runner.JUnitCore" />
       <module name="lessons" />
       <option name="PROGRAM_PARAMETERS" value="$AffectedModuleNames$" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Program Files/Java/jdk1.8.0_201" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../../Program Files/Java/jre1.8.0_291" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCursor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestManagers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.winobjects.v2.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.managers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.winobjects.v2" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.winobjects.v2.TestCursor" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.managers" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.managers.TestManagers" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestDesktop" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestManagers.testMixedPicturesArrayManager" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.winobjects.v2.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.managers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.winobjects.v2" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.winobjects.v2.TestDesktop" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.managers" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.managers.TestManagers" />
+      <option name="METHOD_NAME" value="testMixedPicturesArrayManager" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestIcon" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestManagers.testPairManager1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.winobjects.v2.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.managers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.winobjects.v2" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.winobjects.v2.TestIcon" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.managers" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.managers.TestManagers" />
+      <option name="METHOD_NAME" value="testPairManager1" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNumberOperations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestManagers.testPairManager2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.base.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.managers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.base" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.base.TestNumberOperations" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.managers" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.managers.TestManagers" />
+      <option name="METHOD_NAME" value="testPairManager2" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestTypes" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestManagers.testPairManager3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="lessons" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="net.thumbtack.school.types.v2.*" />
+          <option name="PATTERN" value="net.thumbtack.school.pictures.managers.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="net.thumbtack.school.types.v2" />
-      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.types.v2.TestTypes" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="net.thumbtack.school.pictures.managers" />
+      <option name="MAIN_CLASS_NAME" value="net.thumbtack.school.pictures.managers.TestManagers" />
+      <option name="METHOD_NAME" value="testPairManager3" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,19 +237,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.JUnitCore" />
-      <item itemvalue="JUnit.TestTypes" />
-      <item itemvalue="JUnit.TestCursor" />
-      <item itemvalue="JUnit.TestDesktop" />
-      <item itemvalue="JUnit.TestIcon" />
-      <item itemvalue="JUnit.TestNumberOperations" />
+      <item itemvalue="JUnit.TestManagers" />
+      <item itemvalue="JUnit.TestManagers.testMixedPicturesArrayManager" />
+      <item itemvalue="JUnit.TestManagers.testPairManager1" />
+      <item itemvalue="JUnit.TestManagers.testPairManager2" />
+      <item itemvalue="JUnit.TestManagers.testPairManager3" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestNumberOperations" />
-        <item itemvalue="JUnit.TestIcon" />
-        <item itemvalue="JUnit.TestDesktop" />
-        <item itemvalue="JUnit.TestCursor" />
-        <item itemvalue="JUnit.TestTypes" />
+        <item itemvalue="JUnit.TestManagers" />
+        <item itemvalue="JUnit.TestManagers.testPairManager3" />
+        <item itemvalue="JUnit.TestManagers.testPairManager2" />
+        <item itemvalue="JUnit.TestManagers.testPairManager1" />
+        <item itemvalue="JUnit.TestManagers.testMixedPicturesArrayManager" />
       </list>
     </recent_temporary>
   </component>
@@ -307,7 +321,21 @@
       <option name="project" value="LOCAL" />
       <updated>1660825923461</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="six">
+      <created>1661360320893</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1661360320893</updated>
+    </task>
+    <task id="LOCAL-00010" summary="six">
+      <created>1661419952548</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1661419952548</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -403,7 +431,8 @@
     <MESSAGE value="second" />
     <MESSAGE value="third" />
     <MESSAGE value="fourth" />
-    <option name="LAST_COMMIT_MESSAGE" value="fourth" />
+    <MESSAGE value="six" />
+    <option name="LAST_COMMIT_MESSAGE" value="six" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -420,6 +449,9 @@
     <SUITE FILE_PATH="coverage/FirstSteps_java$TestRectPicture.ic" NAME="TestRectPicture Coverage Results" MODIFIED="1661333519368" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Thumbtack$TestPicture.ic" NAME="TestPicture Coverage Results" MODIFIED="1661424453732" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
     <SUITE FILE_PATH="coverage/FirstSteps_java$TestPicture__1_.ic" NAME="TestPicture (1) Coverage Results" MODIFIED="1661253779451" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
     </SUITE>
@@ -427,6 +459,9 @@
       <FILTER>net.thumbtack.school.winobjects.v3.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/FirstSteps_java$TestSignedRoundPicture.ic" NAME="TestSignedRoundPicture Coverage Results" MODIFIED="1661334527059" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Thumbtack$TestPictureFactory.ic" NAME="TestPictureFactory Coverage Results" MODIFIED="1661424535415" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/FirstSteps_java$JUnitCore.ic" NAME="JUnitCore Coverage Results" MODIFIED="1661334539630" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
@@ -445,7 +480,7 @@
     <SUITE FILE_PATH="coverage/FirstSteps_java$TestIcon.ic" NAME="TestIcon Coverage Results" MODIFIED="1661332182665" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>net.thumbtack.school.winobjects.v3.*</FILTER>
     </SUITE>
-    <SUITE FILE_PATH="coverage/FirstSteps_java$TestPicture_testFormat1.ic" NAME="TestPicture.testFormat1 Coverage Results" MODIFIED="1661333571271" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+    <SUITE FILE_PATH="coverage/FirstSteps_java$TestPicture_testFormat1.ic" NAME="TestPicture.testFormat1 Coverage Results" MODIFIED="1661423926677" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/FirstSteps_java$TestPicture_testWrongSettings.ic" NAME="TestPicture.testWrongSettings Coverage Results" MODIFIED="1661253005761" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
@@ -454,7 +489,11 @@
     <SUITE FILE_PATH="coverage/FirstSteps_java$TestRectPicture_testRectPicture1.ic" NAME="TestRectPicture.testRectPicture1 Coverage Results" MODIFIED="1661253295176" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
     </SUITE>
+    <SUITE FILE_PATH="coverage/Thumbtack$JUnitCore.ic" NAME="JUnitCore Coverage Results" MODIFIED="1661424561897" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/FirstSteps_java$TestPictureFactory_testPictureFactory.ic" NAME="TestPictureFactory.testPictureFactory Coverage Results" MODIFIED="1661253575068" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Thumbtack$TestPicture.exec" NAME="TestPicture Coverage Results" MODIFIED="1661423931596" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
     </SUITE>
     <SUITE FILE_PATH="coverage/FirstSteps_java$TestTypes.ic" NAME="TestTypes Coverage Results" MODIFIED="1661334669295" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="true">
@@ -468,6 +507,9 @@
     </SUITE>
     <SUITE FILE_PATH="coverage/FirstSteps_java$TestRectPicture_testRectPicture5.ic" NAME="TestRectPicture.testRectPicture5 Coverage Results" MODIFIED="1661252534613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
       <FILTER>net.thumbtack.school.pictures.v3.*</FILTER>
+    </SUITE>
+    <SUITE FILE_PATH="coverage/Thumbtack$TestDesktop.exec" NAME="TestDesktop Coverage Results" MODIFIED="1661423897325" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="jacoco" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>net.thumbtack.school.winobjects.v2.*</FILTER>
     </SUITE>
   </component>
   <component name="editorHistoryManager">
