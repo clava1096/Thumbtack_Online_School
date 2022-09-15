@@ -3,22 +3,28 @@ package net.thumbtack.school.ttschool;
 import java.util.*;
 
 public class TraineeMap {
+    // REVU private
+    // pairr
     Map<Trainee, String> Pairr;
     public TraineeMap(){
         Pairr = new HashMap<>();
     }
 
     public void addTraineeInfo(Trainee trainee, String institute) throws TrainingException{
+        // REVU не надо containsKey, а тем более containsValue (что Вам за дело до него тут ?)
+        // putIfAbsent сама скажет
         if (Pairr.containsKey(trainee) & Pairr.containsValue(institute)) throw new TrainingException(TrainingErrorCode.DUPLICATE_TRAINEE);
         Pairr.put(trainee,institute);
     }
 
     public void replaceTraineeInfo(Trainee trainee, String institute) throws TrainingException{
+        // REVU не надо containsKey, replace сама скажет
         if (Pairr.containsKey(trainee)) Pairr.replace(trainee,institute);
         else throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
     }
 
     public void removeTraineeInfo(Trainee trainee)  throws TrainingException{
+        // REVU не надо containsKey, remove сама скажет
         if(!Pairr.containsKey(trainee)) throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
             Pairr.remove(trainee);
     }
@@ -28,6 +34,7 @@ public class TraineeMap {
     }
 
     public String getInstituteByTrainee(Trainee trainee) throws TrainingException{
+        // REVU не надо containsKey, get сама скажет
         if(!Pairr.containsKey(trainee)) throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
         return Pairr.get(trainee);
     }

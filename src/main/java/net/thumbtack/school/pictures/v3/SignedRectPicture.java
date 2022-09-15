@@ -12,6 +12,7 @@ import java.util.Objects;
 public class SignedRectPicture extends RectPicture implements Resizable, Movable, Signed {
     String signature;
 
+    // REVU В классе должен быть только один конструктор, явно присваивающий значения полям. Остальные должны вызывать другой конструктор
     public SignedRectPicture(Point topLeft, Point bottomRight, PictureFormat format, String signature) throws GraphicException{
         super(topLeft,bottomRight,format);
         checkSignature(signature);
@@ -40,6 +41,7 @@ public class SignedRectPicture extends RectPicture implements Resizable, Movable
         super(xLeft, yTop, width, height,PictureFormat.GIF);
         this.signature = signature;
     }
+    // REVU Если метод у потомка только вызывает тот же метод родителя и ничего больше не делает, то его переопределять не надо. Удалите все такие методы
     public Point getTopLeft(){
         return super.getTopLeft();
     }

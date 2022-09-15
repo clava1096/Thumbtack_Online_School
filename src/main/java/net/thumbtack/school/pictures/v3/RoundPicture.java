@@ -10,6 +10,8 @@ import java.util.Objects;
 public class RoundPicture extends Picture implements Resizable, Movable {
     private Point center;
     private int radius;
+    // REVU не нужен
+    // см. REVU в классе RectPicture
     private PictureFormat format;
     public RoundPicture(Point center, int radius, PictureFormat format) throws GraphicException {
         super();

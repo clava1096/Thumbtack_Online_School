@@ -15,6 +15,10 @@ public class FileService {
         File file = new File(fileName);
         try(FileOutputStream fos = new FileOutputStream(file)){
             fos.write(array);
+            // REVU не надо его ловить и делать новое
+            // просто уберите catch и оно будет само пробрасываться выше
+            // try-with-resource не требует обязательного catch
+            // здесь и везде
         }catch (IOException ex){
             throw new IOException();
         }
@@ -50,6 +54,7 @@ public class FileService {
         byte[] arr = new byte[array.length/2];
         int c , j = 0, i = 0;
         while((c=bis.read())!=-1){
+            // REVU вызывайте skip для пропуска
             if (j%2==0){
                 arr[i] = (byte)c;
                 i++;
@@ -98,6 +103,8 @@ public class FileService {
     }
 
     public static RectPicture readRectPictureFromBinaryFile(File file) throws IOException, GraphicException {
+        // REVU leftX, rightY
+        // всегда camelCase для имен переменных
         int height, width, LeftX, RightY;
         String format;
         try(DataInputStream fi = new DataInputStream(new FileInputStream(file))){
@@ -125,6 +132,8 @@ public class FileService {
     }
 
     public static void modifyRectPictureArrayInBinaryFile(File file) throws IOException, GraphicException {
+        // REVU не нужно. И не давайте такие имена - это, возможно, кто-то читать будет
+        // RandomAccessFile и его метод seek
         int[] buba = new int[20];
         try(DataInputStream fi = new DataInputStream(new FileInputStream(file))){
             for(int i =0; i < 20; i++){
@@ -145,6 +154,7 @@ public class FileService {
     }
 
     public static RectPicture[] readRectPictureArrayFromBinaryFile(File file) throws IOException {
+        // REVU leftX, rightY
         int height, width, LeftX, RightY;
         RectPicture[] MrectPicture = new RectPicture[5];
         try(DataInputStream fi = new DataInputStream(new FileInputStream(file))){
@@ -155,6 +165,7 @@ public class FileService {
             height = fi.readInt();
                 MrectPicture[i] = new RectPicture(LeftX,RightY,width,height,"GIF");
             }
+            // REVU и GraphicException ловить не надо, пробрасывайте выше
         }catch (IOException | GraphicException ex){
             throw new IOException();
         }
@@ -162,9 +173,12 @@ public class FileService {
     }
 
     public static void saveObjectFile(Object obj, File file, String nameOfClass, boolean Lines) throws IOException {
+        // REVU не надо было делать метод для 2 разных классов
+        // 2 разных метода
         String c;
         if(Objects.equals(nameOfClass, "RectPicture")){
             RectPicture rectPicture = (RectPicture)obj;
+            // REVU всегда указывайте кодировку UTF8. Здесь и далее
             try(FileWriter writer = new FileWriter(file.toString())){
                 if (!Lines) {
                     c = " ";
@@ -214,6 +228,7 @@ public class FileService {
 
 
     public static RectPicture readRectPictureFromTextFileOneLine(File file) throws IOException, GraphicException {
+        // REVU просто BufferedReader, readLine, split и все
         RectPicture rectPicture;
         String str = "";
         String format = ""; int height = 0, width = 0, getx = 0, gety = 0;
@@ -245,6 +260,7 @@ public class FileService {
     }
 
     public static RectPicture readRectPictureFromTextFileFiveLines(File file) throws IOException, GraphicException {
+        // REVU просто BufferedReader и 5 рвз readLine
         RectPicture rectPicture;
         String str = "";
         String format = ""; int Lgetx = 0, Lgety = 0, Rgetx = 0, Rgety = 0;
@@ -275,6 +291,7 @@ public class FileService {
     }
 
     public static Trainee readTraineeFromTextFileOneLine(File file) throws TrainingException, IOException {
+        // REVU просто BufferedReader, readLine, split и все
         Trainee trainee;
         String str = "";
         String firstName = "", LastName = "";
@@ -302,6 +319,7 @@ public class FileService {
     }
 
     public static Trainee readTraineeFromTextFileThreeLines(File file) throws IOException, TrainingException {
+        // REVU просто BufferedReader и 3 readLine
         Trainee trainee;
         String str = "";
         String firstName = "", LastName = "";

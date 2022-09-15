@@ -5,6 +5,7 @@ import java.util.Objects;
 import java.util.Set;
 
 public class School {
+    // REVU все private
     String name;
     int year;
     Set<Group> Groups = new HashSet<>();
@@ -36,6 +37,7 @@ public class School {
     }
 
     public void addGroup(Group group) throws TrainingException{
+        // REVU Линейный проход для добавления - это плохо, медленно. Подумайте, как сделать, чтобы при формировании Set использовалось только name. Подсказка - кроме HashSet, есть и другой
         for(Group group1 : Groups){
             if (group1.getName().equals(group.getName())) throw new TrainingException(TrainingErrorCode.DUPLICATE_GROUP_NAME);
         }

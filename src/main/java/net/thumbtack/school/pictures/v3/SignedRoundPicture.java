@@ -10,6 +10,7 @@ import net.thumbtack.school.winobjects.v3.Desktop;
 import java.util.Objects;
 
 public class SignedRoundPicture extends RoundPicture implements Resizable, Movable, Signed {
+    // REVU см. REVU в классе SignedRectPicture
     String signature;
     public SignedRoundPicture(Point center, int radius, PictureFormat format, String signature) throws GraphicException {
         super(center,radius,format);

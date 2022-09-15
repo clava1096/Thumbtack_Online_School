@@ -3,9 +3,12 @@ package net.thumbtack.school.ttschool;
 import java.util.*;
 
 public class Group {
+    // REVU private
     String name, room;
+    // REVU trainees
     List<Trainee> Trainees = new ArrayList<>();
     public Group(String name, String room) throws TrainingException {
+        // REVU вызовите сеттеры, не дублируйте код
         checkName(name);
         this.name = name;
         checkRoom(room);
@@ -85,10 +88,12 @@ public class Group {
     }
 
     public List<Trainee> getTraineesWithMaxRating() throws TrainingException{
+        // REVU traineesWithMaxRating
         List<Trainee> TraineesWithMaxRating = new ArrayList<>();
         if (Trainees.isEmpty()){
             throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
         }
+        // REVU права изменять список Вам тут не дано
         Trainees.sort((o1, o2) -> Integer.compare(o2.getRating(), o1.getRating()));
 
         int maxr=0;

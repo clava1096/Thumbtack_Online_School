@@ -11,8 +11,13 @@ public class MatrixNonSimilarRows {
     }
 
     public List<int[]> getNonSimilarRows() {
+        // REVU почти верно
+        // Но лучше использовать не List<Set>, а Set<Set<Integer>>
+        // и не придется вручную проверять на contains
+        // а еще лучше Map<Set<Integer>,int[]>
         List<Set> NonSimilarRows = new ArrayList<>();
         for (int[] ints : matrix) {
+            // REVU почему имя sets ? Тут один set
             Set<Integer> sets = new HashSet<>();
             for (int anInt : ints) {
                 sets.add(anInt);

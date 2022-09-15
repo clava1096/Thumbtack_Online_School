@@ -9,9 +9,13 @@ import java.util.Objects;
 
 public class RectPicture extends Picture implements Resizable, Movable {
     private Point topLeft, bottomRight;
+    // REVU width, height не нужны, так как вычисляются через topLeft и bottomRight
     private int width, height;
+    // REVU не нужен, есть у родителя
     private PictureFormat format;
+    // REVU В классе должен быть только один конструктор, явно присваивающий значения полям. Остальные должны вызывать другой конструктор
     public RectPicture(Point topLeft, Point bottomRight, PictureFormat format) throws GraphicException{
+        // REVU сделайте конструктор в родительском классе (то есть Picture) и вызывайте его через super(...)
         this.topLeft= topLeft;
         this.bottomRight = bottomRight;
         this.width = bottomRight.getX()-topLeft.getX()+1;
