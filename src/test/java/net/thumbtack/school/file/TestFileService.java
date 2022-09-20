@@ -101,7 +101,7 @@ public class TestFileService {
         for (int i = 0; i < count; i++) {
             rectPictures[i] = new RectPicture(new Point(random.nextInt(), random.nextInt()), new Point(random.nextInt(), random.nextInt()),
                     "GIF");
-            // rectPictures[i] = new RectPicture(new Point(1, 1), new Point(1, 1),"GIF");
+             //rectPictures[i] = new RectPicture(new Point(1, 1), new Point(1, 1),"GIF");
         }
         File file = Files.createFile(tempDir.resolve("test.dat")).toFile();
         FileService.writeRectPictureArrayToBinaryFile(file, rectPictures);

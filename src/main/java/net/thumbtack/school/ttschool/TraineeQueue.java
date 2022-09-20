@@ -1,30 +1,31 @@
 package net.thumbtack.school.ttschool;
 
 import java.util.ArrayDeque;
+import java.util.Queue;
 
 public class TraineeQueue {
     // REVU private
     // pair1 (почему, кстати, pair ?)
     // и не надо тут ArrayDeque, просто Queue
 
-    ArrayDeque Pair1;
+    Queue traineeQueue;
 
     public TraineeQueue(){
-        Pair1 = new ArrayDeque();
+        traineeQueue = new ArrayDeque();
     }
 
     public void addTrainee(Trainee trainee) {
-        Pair1.add(trainee);
+        traineeQueue.add(trainee);
     }
 
     public Object removeTrainee() throws TrainingException{
-        // REVU не надо isEmpty, poll сама скажет
-        if (Pair1.isEmpty()) throw new TrainingException(TrainingErrorCode.EMPTY_TRAINEE_QUEUE);
-        return Pair1.remove();
+        Object s = traineeQueue.poll();
+        if(s == null) throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
+        return s;
     }
 
     public boolean isEmpty(){
-        return Pair1.isEmpty();
+        return traineeQueue.isEmpty();
     }
 
 }

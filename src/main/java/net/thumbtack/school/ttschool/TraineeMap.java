@@ -3,53 +3,46 @@ package net.thumbtack.school.ttschool;
 import java.util.*;
 
 public class TraineeMap {
-    // REVU private
-    // pairr
-    Map<Trainee, String> Pairr;
+    private Map<Trainee, String> traineeMap;
     public TraineeMap(){
-        Pairr = new HashMap<>();
+        traineeMap = new HashMap<>();
     }
 
     public void addTraineeInfo(Trainee trainee, String institute) throws TrainingException{
-        // REVU не надо containsKey, а тем более containsValue (что Вам за дело до него тут ?)
-        // putIfAbsent сама скажет
-        if (Pairr.containsKey(trainee) & Pairr.containsValue(institute)) throw new TrainingException(TrainingErrorCode.DUPLICATE_TRAINEE);
-        Pairr.put(trainee,institute);
+        String s = traineeMap.putIfAbsent(trainee, institute);
+        if (s != null) throw new TrainingException(TrainingErrorCode.DUPLICATE_TRAINEE);
     }
 
     public void replaceTraineeInfo(Trainee trainee, String institute) throws TrainingException{
-        // REVU не надо containsKey, replace сама скажет
-        if (Pairr.containsKey(trainee)) Pairr.replace(trainee,institute);
-        else throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
+        String s = traineeMap.replace(trainee,institute);
+        if (s == null) throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
     }
 
     public void removeTraineeInfo(Trainee trainee)  throws TrainingException{
-        // REVU не надо containsKey, remove сама скажет
-        if(!Pairr.containsKey(trainee)) throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
-            Pairr.remove(trainee);
+        String s = traineeMap.remove(trainee);
+        if (s == null) throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
     }
 
     public int getTraineesCount(){
-        return Pairr.size();
+        return traineeMap.size();
     }
 
     public String getInstituteByTrainee(Trainee trainee) throws TrainingException{
-        // REVU не надо containsKey, get сама скажет
-        if(!Pairr.containsKey(trainee)) throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
-        return Pairr.get(trainee);
+        if (traineeMap.get(trainee) == null) throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
+        return traineeMap.get(trainee);
     }
 
     public Set<Trainee> getAllTrainees(){
-        return new HashSet<>(Pairr.keySet());
+        return new HashSet<>(traineeMap.keySet());
     }
 
     public Set<String> getAllInstitutes(){
-        return new HashSet<>(Pairr.values());
+        return new HashSet<>(traineeMap.values());
     }
 
     public boolean isAnyFromInstitute(String institute){
 
-        return Pairr.containsValue(institute);
+        return traineeMap.containsValue(institute);
     }
 
 }

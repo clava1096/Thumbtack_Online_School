@@ -11,31 +11,14 @@ public class MatrixNonSimilarRows {
     }
 
     public List<int[]> getNonSimilarRows() {
-        // REVU почти верно
-        // Но лучше использовать не List<Set>, а Set<Set<Integer>>
-        // и не придется вручную проверять на contains
-        // а еще лучше Map<Set<Integer>,int[]>
-        List<Set> NonSimilarRows = new ArrayList<>();
+        Map<Set<Integer>, int[]> NonSimilarRows = new HashMap<>();
         for (int[] ints : matrix) {
-            // REVU почему имя sets ? Тут один set
-            Set<Integer> sets = new HashSet<>();
+            Set<Integer> set = new HashSet<>();
             for (int anInt : ints) {
-                sets.add(anInt);
+                set.add(anInt);
             }
-            NonSimilarRows.add(sets);
+            NonSimilarRows.put(set,ints);
         }
-        List<int[]> NN1 = new ArrayList<>();
-        int[] j = {};
-        Set sets;
-        for(int i = 0; i < matrix.length; i++){
-            sets = NonSimilarRows.get(i);
-            for (int g = 0 ; g < NonSimilarRows.size(); g++){
-                if (NonSimilarRows.contains(sets)){
-                    j = matrix[NonSimilarRows.lastIndexOf(sets)];
-                }
-            }
-            if(!NN1.contains(j))NN1.add(j);
-        }
-        return NN1;
+        return new ArrayList<>(NonSimilarRows.values());
     }
 }

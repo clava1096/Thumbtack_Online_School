@@ -3,16 +3,11 @@ package net.thumbtack.school.ttschool;
 import java.util.*;
 
 public class Group {
-    // REVU private
-    String name, room;
-    // REVU trainees
-    List<Trainee> Trainees = new ArrayList<>();
+    private String name, room;
+     List<Trainee> trainees = new ArrayList<>();
     public Group(String name, String room) throws TrainingException {
-        // REVU вызовите сеттеры, не дублируйте код
-        checkName(name);
-        this.name = name;
-        checkRoom(room);
-        this.room = room;
+        setName(name);
+        setRoom(room);
     }
 
     public void setName(String name) throws TrainingException{
@@ -34,21 +29,21 @@ public class Group {
     }
 
     public List<Trainee> getTrainees(){
-        return Trainees;
+        return trainees;
     }
 
     public void addTrainee(Trainee trainee){
-        this.Trainees.add(trainee);
+        this.trainees.add(trainee);
     }
 
     public void removeTrainee(Trainee trainee) throws TrainingException{
-        boolean c = this.Trainees.remove(trainee);
+        boolean c = this.trainees.remove(trainee);
         if (!c) throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
     }
 
     public void removeTrainee(int index) throws TrainingException{
         try{
-           Trainees.remove(index);
+           trainees.remove(index);
         }catch (IndexOutOfBoundsException ex){
             throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
         }
@@ -56,7 +51,7 @@ public class Group {
     }
 
     public Trainee  getTraineeByFullName(String fullName) throws TrainingException {
-        for(Trainee trainee : Trainees) {
+        for(Trainee trainee : trainees) {
             if (trainee.getFullName().equals(fullName)) {
                 return trainee;
             }
@@ -64,7 +59,7 @@ public class Group {
         throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
     }
     public Trainee getTraineeByFirstName(String firstName) throws TrainingException{
-        for(Trainee trainee : Trainees) {
+        for(Trainee trainee : trainees) {
             if (trainee.getFirstName().equals(firstName)) {
                 return trainee;
             }
@@ -72,43 +67,42 @@ public class Group {
         throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
     }
     public void  sortTraineeListByFirstNameAscendant(){
-        Trainees.sort(Comparator.comparing(Trainee::getFirstName));
+        trainees.sort(Comparator.comparing(Trainee::getFirstName));
     }
 
     public void  sortTraineeListByRatingDescendant(){
-        Trainees.sort((o1, o2) -> Integer.compare(o2.getRating(), o1.getRating()));
+        trainees.sort((o1, o2) -> Integer.compare(o2.getRating(), o1.getRating()));
     }
 
     public void  reverseTraineeList(){
-        Collections.reverse(Trainees);
+        Collections.reverse(trainees);
     }
 
     public void  rotateTraineeList(int positions){
-        Collections.rotate(Trainees, positions);
+        Collections.rotate(trainees, positions);
     }
 
     public List<Trainee> getTraineesWithMaxRating() throws TrainingException{
-        // REVU traineesWithMaxRating
-        List<Trainee> TraineesWithMaxRating = new ArrayList<>();
-        if (Trainees.isEmpty()){
+        List<Trainee> traineesWithMaxRating = new ArrayList<>();
+        if (trainees.isEmpty()){
             throw new TrainingException(TrainingErrorCode.TRAINEE_NOT_FOUND);
         }
-        // REVU права изменять список Вам тут не дано
-        Trainees.sort((o1, o2) -> Integer.compare(o2.getRating(), o1.getRating()));
+        List<Trainee> copyOfTrainees = trainees;
+        copyOfTrainees.sort((o1, o2) -> Integer.compare(o2.getRating(), o1.getRating()));
 
-        int maxr=0;
-        for (Trainee trainee : Trainees){
-            if (trainee.getRating() >= maxr) {
-                maxr=trainee.getRating();
-                TraineesWithMaxRating.add(trainee);
+        int maxR=0;
+        for (Trainee trainee : copyOfTrainees){
+            if (trainee.getRating() >= maxR) {
+                maxR=trainee.getRating();
+                traineesWithMaxRating.add(trainee);
             }
         }
-        return TraineesWithMaxRating;
+        return traineesWithMaxRating;
     }
 
     public boolean  hasDuplicates(){
-        ArrayList<Trainee> TraineesWithoutDublicates = new ArrayList<>(new HashSet<>(Trainees));
-        return !(Trainees.size() <= TraineesWithoutDublicates.size());
+        ArrayList<Trainee> TraineesWithoutDublicates = new ArrayList<>(new HashSet<>(trainees));
+        return !(trainees.size() <= TraineesWithoutDublicates.size());
     }
 
     public static void checkName(String name) throws  TrainingException{
@@ -127,12 +121,12 @@ public class Group {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Group group = (Group) o;
-        return Objects.equals(name, group.name) && Objects.equals(room, group.room) && Objects.equals(Trainees, group.Trainees);
+        return Objects.equals(name, group.name) && Objects.equals(room, group.room) && Objects.equals(trainees, group.trainees);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, room, Trainees);
+        return Objects.hash(name, room, trainees);
     }
 
 }

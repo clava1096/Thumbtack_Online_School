@@ -1,6 +1,6 @@
 package net.thumbtack.school.introduction;
 
-import java.nio.IntBuffer;
+import java.util.Arrays;
 
 public class FirstSteps {
     public int sum(int a, int b) {
@@ -18,46 +18,28 @@ public class FirstSteps {
 
 
     public int mod(int x, int y) {
-        int c = x % y;
-        return c;
+        return x % y;
     }
 
     public boolean isEqual(int x, int y) {
-        // REVU просто return x == y;
-        // далеее аналогично
-        if (x == y) {
-            return true;
-        } else {
-            return false;
-        }
-
+        return x == y;
     }
 
 
     public boolean isGreater(int x, int y) {
-        if (x > y) {
-            return true;
-        } else {
-            return false;
-        }
+        return x > y;
     }
 
     public boolean isInsideRect(int xLeft, int yTop, int xRight, int yBottom, int x, int y) {
-        if (xLeft <= x && x <= xRight && yTop <= y && y <= yBottom) {
-            return true;
-        } else {
-            return false;
-        }
+        return xLeft <= x && x <= xRight && yTop <= y && y <= yBottom;
 
     }
 
 
     public int sum(int[] array) {
         int s = 0;
-        // REVU for(int elem : array)
-        // везде, где можно
-        for (int x = 0; x < array.length; x++) {
-            s += array[x];
+        for (int elem : array) {
+            s += elem;
         }
         return s;
 
@@ -65,9 +47,8 @@ public class FirstSteps {
 
     public int mul(int[] array) {
         int s = 1;
-        // REVU то же
-        for (int x = 0; x < array.length; x++) {
-            s *= array[x];
+        for (int elem : array) {
+            s *= elem;
         }
         if (array.length == 0) {
             return 0;
@@ -79,16 +60,9 @@ public class FirstSteps {
     public int min(int[] array) {
         if (array.length == 0) {
             return Integer.MAX_VALUE;
-            // REVU else не нужен
-        } else {
-            int min = array[0];
-            for (int x = 0; x < array.length; x++) {
-                if (array[x] < min) {
-                    min = array[x];
-                }
-            }
-            return min;
         }
+        Arrays.sort(array);
+        return array[0];
     }
 
 
@@ -97,9 +71,9 @@ public class FirstSteps {
             return Integer.MIN_VALUE;
         }
         int max = array[0];
-        for (int x = 0; x < array.length; x++) {
-            if (array[x] > max) {
-                max = array[x];
+        for (int i : array) {
+            if (i > max) {
+                max = i;
             }
         }
         return max;
@@ -109,14 +83,10 @@ public class FirstSteps {
         if (array.length == 0) {
             return 0;
         }
-        // REVU вызовите sum
-        float avgr = 0;
-        for (int x = 0; x < array.length; x++) {
-            avgr += array[x];
-
-        }
-        avgr /= array.length;
-        return avgr;
+        float avrg = 0;
+        avrg = sum(array);
+        avrg /= array.length;
+        return avrg;
     }
 
     public boolean isSortedDescendant(int[] array) {
@@ -124,21 +94,15 @@ public class FirstSteps {
         if (array.length == 0 || array.length == 1) {
             return true;
         }
-        int a = array[0];
-        // REVU не нужна. Сразу return false как только обнаружили неудачу
         boolean sort = false;
-        // REVU двойной цикл не нужен.
-        // цикл по x просто уберите
-        for (int x = 0; x < array.length; x++) {
-            for (int j = 1; j < array.length; j++) {
-                if (array[j] < array[j - 1]) {
-                    sort = true;
-                } else {
-                    sort = false;
-                }
-
+        for (int j = 1; j < array.length; j++) {
+            if (array[j] < array[j - 1]) {
+                sort = true;
+            } else {
+                return false;
             }
         }
+
         return sort;
     }
 
@@ -151,17 +115,16 @@ public class FirstSteps {
 
     public boolean find(int[] array, int value) {
         boolean sort = false;
-        // REVU for each
-        for (int x = 1; x < array.length; x++) {
-            if (array[x] == value) {
+        for (int elem : array) {
+            if (elem == value) {
                 sort = true;
+                break;
             }
         }
         return sort;
     }
 
     public void reverse(int[] array) {
-        int[] arrayResult1 = array;
         for (int x = 0; x < array.length / 2; x++) {
             int temp = array[x];
             array[x] = array[array.length - 1 - x];
@@ -170,51 +133,27 @@ public class FirstSteps {
     }
 
     public boolean isPalindrome(int[] array) {
-        // REVU не нужен. Сравнивайте элементы исходного массива
-        // аналогично тому, как Вы их переставляете в предыдущем методе
-        int[] arrayResult1 = array;
-        // REVU не нужна. return false при первой же неудаче
-        boolean sort = false;
-        if (array.length == 0 || array.length == 1) {
-            return true;
-        }
-        for (int x = 0; x < array.length / 2; x++) {
-            int temp = array[x];
-            array[x] = array[array.length - 1 - x];
-            array[array.length - 1 - x] = temp;
-            if (temp == array[x]) {
-                sort = true;
-            } else {
-                sort = false;
-                break;
-            }
-        }
-        return sort;
+        int [] arrayreverse = Arrays.copyOf(array, array.length);
+        reverse(arrayreverse);
+        return Arrays.equals(array, arrayreverse);
     }
 
     public int sum(int[][] matrix) {
         int sum = 0;
-        // REVU for each
-        for (int i = 0; i < matrix.length; i++) {
-            // REVU вызовите sum для линейного массива
-            for (int j = 0; j < matrix.length; j++) {
-                sum += matrix[i][j];
-            }
+        for (int[] elem : matrix) {
+            sum += sum(elem);
         }
         return sum;
     }
 
     public int max(int[][] matrix) {
-        // REVU аналогично
         if (matrix.length == 1) {
             return Integer.MIN_VALUE;
         }
         int max = matrix[0][0];
-        for (int x = 0; x < matrix.length; x++) {
-            for (int j = 0; j < matrix.length; j++) {
-                if (matrix[x][j] > max) {
-                    max = matrix[x][j];
-                }
+        for (int[] elem : matrix) {
+            if (max(elem) > max) {
+                max = max(elem);
             }
         }
         return max;
@@ -225,25 +164,20 @@ public class FirstSteps {
             return Integer.MIN_VALUE;
         }
         int max = matrix[0][0];
-        // REVU j не нужна, так как всегда равна x
-        int j = 0;
         for (int x = 0; x < matrix.length; x++) {
-            j=x;
-                if (matrix[x][j] > max) {
-                    max = matrix[x][j];
+                if (matrix[x][x] > max) {
+                    max = matrix[x][x];
                 }
         }
         return max;
     }
 
     public boolean isSortedDescendant(int[][] matrix) {
-        // REVU не нужна. return false при первой же неудаче
         boolean sort = false;
-
-        for (int i =0; i <matrix.length; i++) {
-            sort = isSortedDescendant(matrix[i]);
-            if (sort == false) {
-                break;
+        for (int[] ints : matrix) {
+            sort = isSortedDescendant(ints);
+            if (!sort) {
+                return false;
             }
         }
         return sort;

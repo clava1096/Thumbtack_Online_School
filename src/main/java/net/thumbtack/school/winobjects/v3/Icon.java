@@ -1,6 +1,5 @@
 package net.thumbtack.school.winobjects.v3;
 
-import net.thumbtack.school.exceptions.v3.GraphicErrorCode;
 import net.thumbtack.school.exceptions.v3.GraphicException;
 import net.thumbtack.school.iface.v3.Movable;
 import net.thumbtack.school.iface.v3.Signed;
@@ -16,16 +15,14 @@ public class Icon implements Movable, Signed {
     public Icon(Point point, String signature) throws GraphicException {
         this.x = point.getX();
         this.y = point.getY();
-        checkSignature(signature);
-        this.signature = signature;
-
+        setSignature(signature);
     }
-
+    @Override
     public void setSignature(String signature) throws GraphicException{
         checkSignature(signature);
         this.signature = signature;
     }
-
+    @Override
     public String getSignature() {
         return signature;
     }
@@ -41,19 +38,15 @@ public class Icon implements Movable, Signed {
     public void setY(int y){
         this.y = y;
     }
+    @Override
     public void moveTo(int x, int y){
         this.x = x;
         this.y = y;
     }
+    @Override
     public void moveRel(int dx, int dy){
         this.x = this.x + dx;
         this.y = this.y + dy;
-    }
-
-    private static void checkSignature(String signature) throws GraphicException {
-        if(signature == null){
-            throw new GraphicException(GraphicErrorCode.NULL_SIGNATURE);
-        }
     }
 
 }

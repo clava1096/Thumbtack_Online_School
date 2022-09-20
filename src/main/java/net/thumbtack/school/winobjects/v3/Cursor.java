@@ -41,10 +41,12 @@ public class Cursor implements Movable {
         this.y = y;
     }
 
+    @Override
     public void moveTo(int x, int y){
         this.x = x;
         this.y = y;
     }
+    @Override
     public void moveRel(int dx, int dy){
         this.x = this.x + dx;
         this.y = this.y + dy;

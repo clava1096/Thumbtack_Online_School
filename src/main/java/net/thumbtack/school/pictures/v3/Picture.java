@@ -8,6 +8,17 @@ import net.thumbtack.school.winobjects.v3.Desktop;
 
 public abstract class Picture implements Movable, Resizable {
     private PictureFormat format;
+    private int height, width;
+
+    public Picture(int height, int width, PictureFormat format) throws GraphicException {
+        this.height = height;
+        this.width = width;
+        setFormat(format);
+    }
+
+    public Picture (PictureFormat format) throws GraphicException{
+        setFormat(format);
+    }
 
     public PictureFormat getFormat(){
         return format;
@@ -26,19 +37,34 @@ public abstract class Picture implements Movable, Resizable {
         this.format = PictureFormat.fromString(format);
     }
 
+    public void setWidth(int width){
+        this.width = width;
+    }
+
+    public void setHeight(int height){
+        this.height = height;
+    }
+
+    public int getWidth(){
+        return width;
+    }
+    public int getHeight(){
+        return height;
+    }
+
     public abstract boolean isInside(int x, int y);
 
-    // REVU а этот метод не должен быть abstract
-    // его можно тут и написать, раз и навсегда
-    // и из всех наследников удалить - пусть наследуют
-    public abstract boolean isInside(Point point);
+    public boolean isInside(Point point){
+        return isInside(point.getX(), point.getY());
+    }
 
     public abstract boolean isFullyVisibleOnDesktop(Desktop desktop);
 
     public abstract void moveTo(int x, int y);
 
-    // REVU то же самое
-    public abstract void moveTo(Point point);
+    public void moveTo(Point point){
+        moveTo(point.getX(), point.getY());
+    }
 
 
 }

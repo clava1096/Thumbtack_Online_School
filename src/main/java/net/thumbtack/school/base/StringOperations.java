@@ -1,6 +1,5 @@
 package net.thumbtack.school.base;
 
-
 import java.util.StringJoiner;
 
 public class StringOperations {
@@ -22,39 +21,20 @@ public class StringOperations {
     }
 
     public static boolean isSameFirstCharPosition(String string1, String string2, char character) {
-        // REVU просто сравните 2 indexOf
-        int len = Math.min(string1.length(), string2.length());
-        for (int i=0; i<len; i++){
-            if (string1.toCharArray()[i] == string2.toCharArray()[i]) {
-                if ( string1.toCharArray()[i] == character){
-                    return true;
-                }
-            }
-        }
-        return false;
+        return string1.indexOf(character) == string2.indexOf(character);
     }
 
     public static boolean isSameLastCharPosition(String string1, String string2, char character){
         int len = Math.min(string1.length(), string2.length());
-        // REVU а тут - 2 lastIndexOf
-        for (int i=len-1; i>=0; i--){
-            if (string1.toCharArray()[i] == string2.toCharArray()[i]) {
-                if ( string1.toCharArray()[i] == character){
-                    return true;
-                }
-            }
-        }
-        return false;
+        return string1.lastIndexOf(character) == string2.indexOf(character);
     }
 
     public static boolean isSameFirstStringPosition(String string1, String string2, String str){
-        // REVU и здесь 2 indexOf
-        return string1.contains(str) == string2.contains(str);
+        return string1.indexOf(str) == string2.indexOf(str);
     }
 
     public static boolean isSameLastStringPosition(String string1, String string2, String str){
-        // REVU и здесь 2 lastIndexOf
-        return string1.contains(str) == string2.contains(str);
+        return string1.lastIndexOf(str) == string2.lastIndexOf(str);
     }
 
     public static boolean isEqual(String string1, String string2){
@@ -86,43 +66,39 @@ public class StringOperations {
     }
 
     public static String getCommonPrefix(String string1, String string2) {
-        // REVU проще
-        // идите по обеим строкам, сравнивайте chatAt пока они равны и считайте количество равных
-        // а потом substring
+        int j = 0;
+        StringBuilder prefix= new StringBuilder();
         while(true){
-            if (string1.length() > string2.length()){
-                if (string1.startsWith(string2)){
-                    return string2;
+            if (string1.length() > j & string2.length() > j) {
+                if (string1.charAt(j) == string2.charAt(j)) {
+                    prefix.append(string1.toCharArray()[j]);
                 }
-                string2 = string2.substring(0,string2.length()-1);
-            }
-            else {
-                if (string2.startsWith(string1)){
-                    return string1;
+                if (j == 0 & string1.charAt(j) != string2.charAt(j)){
+                    return prefix.toString();
                 }
-                string1 = string1.substring(0,string1.length()-1);
             }
+            else{
+                return prefix.toString();
+            }
+            j++;
         }
     }
+
     public static String reverse(String str){
         return new StringBuilder(str).reverse().toString();
     }
 
     public static boolean isPalindrome(String string){
-        // REVU сделайте без reverse
-        String srt = reverse(string);
-        return (srt.equals(string));
+        StringBuilder str = new StringBuilder(new StringBuilder(string).reverse().toString());
+        return (str.toString().equals(string));
     }
     public static boolean isPalindromeIgnoreCase(String string){
-        // REVU вызовите предыдущий метод
-        String srt = reverse(string);
-        return (srt.equalsIgnoreCase(string));
+        return (isPalindrome(string.toLowerCase()));
     }
     public static String getLongestPalindromeIgnoreCase(String[] strings){
         String mx = "";
-        // REVU for each
-        for(int i =0; i <strings.length; i++){
-            if(isPalindromeIgnoreCase(strings[i]) && mx.length() < strings[i].length()) mx=strings[i];
+        for(String elem : strings){
+            if(isPalindromeIgnoreCase(elem) && mx.length() < elem.length()) mx=elem;
         }
         return mx;
     }

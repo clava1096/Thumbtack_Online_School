@@ -8,13 +8,9 @@ public class Trainee implements Serializable {
     private String firstName, lastName;
     private int rating;
     public Trainee(String firstName,String lastName, int rating) throws TrainingException{
-        // REVU вызовите сеттеры, не дублируйте код
-        checkFirstName(firstName);
-        this.firstName = firstName;
-        checkLastName(lastName);
-        this.lastName = lastName;
-        checkRating(rating);
-        this.rating = rating;
+        setFirstName(firstName);
+        setLastName(lastName);
+        setRating(rating);
     }
 
     public String getFirstName(){

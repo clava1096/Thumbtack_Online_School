@@ -45,15 +45,13 @@ class PairManager<T extends Picture,S extends Picture>{
         }
     }
 
-    // REVU класс PairManager шаблонный
-    // поэтому PairManager<? extends думайте_что>
-    public boolean allPicturesFullyVisibleOnDesktop(PairManager pairManager, Desktop desktop){
+    public boolean allPicturesFullyVisibleOnDesktop(PairManager<? extends Picture,? extends Picture> pairManager, Desktop desktop){
         return (SecondPicture.isFullyVisibleOnDesktop(desktop) & FirstPicture.isFullyVisibleOnDesktop(desktop) &
                 pairManager.FirstPicture.isFullyVisibleOnDesktop(desktop) & pairManager.SecondPicture.isFullyVisibleOnDesktop(desktop));
     }
 
-    // REVU то же
-    public static boolean allPicturesFullyVisibleOnDesktop(PairManager pairManager1, PairManager pairManager2, Desktop desktop){
+    public static boolean allPicturesFullyVisibleOnDesktop(PairManager<? extends Picture,? extends Picture> pairManager1,
+                                                           PairManager<? extends Picture,? extends Picture> pairManager2, Desktop desktop){
         return (pairManager1.SecondPicture.isFullyVisibleOnDesktop(desktop) & pairManager1.FirstPicture.isFullyVisibleOnDesktop(desktop) &
                 pairManager2.FirstPicture.isFullyVisibleOnDesktop(desktop) & pairManager2.SecondPicture.isFullyVisibleOnDesktop(desktop));
     }
